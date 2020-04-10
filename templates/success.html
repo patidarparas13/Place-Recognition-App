@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="We code for better tomorrow.">
+    <meta name="author" content="MLAIT Team">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Place Recognition| MLAIT</title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  <style>
+  </style>
+  </head>
+  <body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-default bg-default sticky-top shadow-sm p-3 mb-5 bg-white rounded">
+    <a class="navbar-brand text-dark" href="{{ url_for('upload')}}">MLAIT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse" >
+      <ul class="navbar-nav ml-auto " >
+        <li class="nav-item active " >
+          <a class="nav-link text-dark " href="{{ url_for('upload')}} ">Home <span class="sr-only">(current)</span></a>
+        </li>
+ <li class="nav-item "><a href="https://twitter.com/mlait1908" class="nav-link "><i class="fa fa-twitter "></i></a></li>
+                                <li class="nav-item "><a href="https://github.com/mlait1908" class="nav-link "><i class="fa fa-github "></i></a></li>
+                                <li class="nav-item "><a href="https://linkedin.com/company/mlait1908" class="nav-link "><i class="fa fa-linkedin "></i></a></li>
+
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+         <div class="container shadow-sm p-3 mb-5 bg-white rounded" >
+      <div class="jumbotron-white">
+          <h1 class="display-3" style="text-align: center;">Place Recognition App</h1>
+                    <p style="text-align: center;">By Paras Patidar <a href="https://linkedin.com/in/patidarparas13"><i class="fa fa-linkedin "></i></a> & Sandeep Yadav  <a href="https://www.linkedin.com/in/sandeep-yadav-cse/ "><i class="fa fa-linkedin "></i></a></p>
+                    <p style="text-align: center;">Available On Github: <a href="https://github.com/patidarparas13"><i class="fa fa-github "></i></a></p>
+
+        </div>
+      </div>
+<div class="container shadow-sm p-3 mb-5 bg-white rounded" >
+      <div class="jumbotron-white">
+          <h5 style="text-align: center;">Dataset Available On: <a href="https://www.tensorflow.org/datasets/catalog/places365_small"> <button type="button" class="btn btn-outline-info">Places365 Dataset</button></a></h5>
+          <h4 style="text-align: center;">Recognised Place can be:
+          <button type="button" class="btn btn-outline-success" >{{ label1 }}</button>
+                  <button type="button" class="btn btn-outline-success" >{{ label2 }}</button>
+                    <button type="button" class="btn btn-outline-success">{{ label3 }}</button>
+
+          </h4>
+
+        </div>
+      </div>
+
+
+<div class="container shadow-sm p-3 mb-5 bg-white rounded" >
+      <div class="jumbotron-white">
+          <h5 style="text-align: center;">Features To Be Added Soon:</h5>
+          <p style="text-align: center;">Live Streaming, Less Response Time and Voice Recognition Features </p>
+          <p style="text-align: center;">These features can help visually challenged people to communicate the app through voice.</p>
+          <p style="text-align: center;"><b>Credits: </b><a href="https://pypi.org/project/keras-models/">Keras Models API</a>,<a href="https://www.tensorflow.org">Tensorflow and Keras</a> </p>
+
+        </div>
+      </div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="{{ url_for('upload')}}">Back to top</a></p>
+    <p>&copy; 2019 MLAIT &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
+<script>
+
+</script>
+
+</html>
+
+
+
+
