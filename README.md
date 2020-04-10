@@ -1,8 +1,8 @@
 # Place-Recognition-App
 
- It analyze the sentiment of the user, whether it is postive or negative.
- 
  Flask and Keras is used to make this place recognition app with the help of place365 dataset available.
+ 1. It helps to detect the places, there are 365 places in the dataset and model can recognise from that 365 places.
+ 2. Model then predict top 3 places, on the basis of the input image.
  
  <img src="https://github.com/patidarparas13/Place-Recognition-App/blob/master/Index.png">
  <img src="https://github.com/patidarparas13/Place-Recognition-App/blob/master/Prediction.png">
