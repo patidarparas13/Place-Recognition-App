@@ -33,6 +33,7 @@ def success():
     if request.method == 'POST':
         f = request.files['file']
         f.save(secure_filename(f.filename))
+        WEIGHTS_PATH = 'https://github.com/Marcnuth/Keras-Models/releases/download/v0.0.5/vgg16-places365_weights_tf_dim_ordering_tf_kernels.h5'
         #Different Types of Class Labels included in the dataset - Total 365 Labels
         CLASS_LABELS = [
             'airfield', 'airplane_cabin', 'airport_terminal', 'alcove', 'alley', 'amphitheater', 'amusement_arcade',
@@ -181,8 +182,8 @@ def success():
             if model_file:
                 model.load_weights(Path(model_file).absolute().as_posix())
             else:
-                # weights_path = get_file('vgg16-places365_weights_tf_dim_ordering_tf_kernels.h5', WEIGHTS_PATH, cache_subdir='models')
-                model.load_weights("model/vgg16-places365_weights_tf_dim_ordering_tf_kernels.h5")
+                weights_path = get_file('vgg16-places365_weights_tf_dim_ordering_tf_kernels.h5', WEIGHTS_PATH, cache_subdir='models')
+                model.load_weights(weights_path)
 
             if K.backend() == 'theano':
                 layer_utils.convert_all_kernels_in_model(model)
