@@ -31,7 +31,7 @@ six==1.14.0
 soupsieve==2.0
 static-parameters==0.4
 tensorboard==1.14.0
-tensorflow==1.14.0
+tensorflow==2.7.2
 tensorflow-estimator==1.14.0
 termcolor==1.1.0
 urllib3==1.25.8
